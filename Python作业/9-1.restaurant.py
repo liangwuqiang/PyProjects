@@ -1,19 +1,26 @@
-class Restaurant():
-    """"餐馆"""
-    def __init__(self,restaurant_name,cuidione_type):
-        """"构造函数"""
+class Restaurant:
+    """"一个有关餐馆的类定义"""
+    def __init__(self, restaurant_name, cuisine_type):
+        """"构造函数，给属性赋值"""
         self.restaurant_name = restaurant_name
-        self.cuidione_type = cuidione_type
+        self.cuisine_type = cuisine_type
 
     def describe_restaurant(self):
-        """餐馆的描述"""
-        print("餐馆的名字是：" + self.restaurant_name)
-        print("餐馆的风格是" + self.cuidione_type)
+        """方法：餐馆的描述"""
+        print("餐馆名字是：" + self.restaurant_name)
+        print("菜肴风格是" + self.cuisine_type)
 
-    def open_restaurant(self):
-        """餐馆正在营业"""
+    @staticmethod
+    def open_restaurant():
+        """方法：餐馆正在营业"""
         print("餐馆正在营业")
 
-restaurant = Restaurant()
-restaurant.describe_restaurant()
-restaurant.open_restaurant()
+
+def main():
+    """主要的调用函数"""
+    restaurant = Restaurant("四川餐厅", "川菜")
+    restaurant.describe_restaurant()
+    restaurant.open_restaurant()
+
+if __name__ == "__main__":
+    main()
