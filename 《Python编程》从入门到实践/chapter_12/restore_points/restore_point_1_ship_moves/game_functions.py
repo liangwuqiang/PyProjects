@@ -16,7 +16,7 @@ def check_keyup_events(event, ship):
         ship.moving_right = False
     elif event.key == pygame.K_LEFT:
         ship.moving_left = False
-        
+
 def check_events(ship):
     """Respond to keypresses and mouse events."""
     for event in pygame.event.get():
