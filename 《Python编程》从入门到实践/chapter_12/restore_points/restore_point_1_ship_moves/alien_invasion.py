@@ -5,12 +5,12 @@ from ship import Ship
 import game_functions as gf
 
 def run_game():
-    # Initialize pygame, settings, and screen object.
-    pygame.init()
-    ai_settings = Settings()
-    screen = pygame.display.set_mode(
+    # 初始化 pygame, settings, 和 screen 对象.
+    pygame.init()   # pygame 初始化
+    ai_settings = Settings()    # 实例化设置类
+    screen = pygame.display.set_mode(   # 取得屏幕参数
         (ai_settings.screen_width, ai_settings.screen_height))
-    pygame.display.set_caption("Alien Invasion")
+    pygame.display.set_caption("外星人入侵")     # 设置标题
     
     # Set the background color.
     bg_color = (230, 230, 230)
