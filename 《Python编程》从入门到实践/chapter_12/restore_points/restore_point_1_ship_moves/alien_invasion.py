@@ -12,13 +12,13 @@ def run_game():
         (ai_settings.screen_width, ai_settings.screen_height))
     pygame.display.set_caption("外星人入侵")     # 设置标题
     
-    # Set the background color.
+    # 设置背景色
     bg_color = (230, 230, 230)
     
-    # Make a ship.
+    # 创建飞船
     ship = Ship(ai_settings, screen)
     
-    # Start the main loop for the game.
+    # 启动游戏循环
     while True:
         gf.check_events(ship)
         ship.update()
